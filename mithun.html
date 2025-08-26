@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wanderlust</title>
+    <style>
+
+        *
+{
+   padding: 0%;
+   margin: 0%;
+   box-sizing: border-box;
+}
+
+
+.imgme
+{
+    height: 70px;
+    width: 70px;
+    margin: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.navbar-links
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero
+{
+
+    height: 450px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/32262491/pexels-photo-32262491.jpeg ) ;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px;
+}
+
+.hero-titel
+{
+    font-size: 65px;
+}
+.hero-lead
+{
+    font-size: 25px;
+}
+
+.hero-btn
+{
+
+    background-color: #ffffff;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 10px;
+
+
+}
+
+.about
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-titel
+{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-layout
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    justify-content: space-between;    
+    align-items: center;
+
+}
+
+.about-text
+{
+    line-height: 1.8;
+
+}
+
+.value
+{
+    background-color: rgb(214, 145, 60);
+}
+
+.section-lead
+{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.value-flex
+{
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.destinations
+{
+    padding: 40px;
+}
+
+.destinations-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.grid-item img{
+
+    width: 200px;
+    height: 200px;
+
+    border: 2px solid #d62c2c;
+    border-radius: 30px;
+}
+
+.contact
+{
+    background-color: rgb(111, 226, 188);
+    padding: 35px;
+}
+
+
+
+.contact-card
+{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    max-width: 100%;
+    
+    
+    margin: auto;
+}
+
+label
+{
+display: block;
+margin-bottom: 10px;
+}
+
+input
+{
+    width: 100%;
+    
+    font-size: 15px;
+    padding: 2px;
+    margin-bottom: 10px;
+
+}
+input,textarea
+{
+    width: 100%;
+    font-size: 15px;
+    padding: 2px;
+    margin-bottom: 10px;
+
+}
+
+.btn-primary
+{
+    background-color: #2a74ff;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+.text-m
+{
+    text-align: center;
+}
+
+footer{
+    background-color: #000000;
+    padding: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media  (max-widht:750px)
+{
+    .about-layout
+    {
+   
+        grid-template-columns: 1fr;
+    }
+
+
+.value-flex
+{
+    flex-direction: column;
+
+
+}
+
+.destinations-grid
+{
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+    </style>
+</head>
+<body>
+  
+
+
+    <nav class="navbar">
+        <img src="https://images.pexels.com/photos/8828415/pexels-photo-8828415.jpeg" class="imgme" width="70px" height="70px">
+       
+        <ul class="navbar-links">
+            <li><a href="./login.html">home</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./destination.html">destinations</a></li>
+            <li><a href="./contact.html" class="btn-primary">contact </a></li>
+
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+        <h1 class="hero-title">Explor indin with use</h1>
+        <p class="hero-lead">unforgettable adventures to every amazing corner of the india</p>
+        <a href="./destintion" class="hero-btn">Book now</a>
+    </section>
+
+    <section class="about">
+
+        <h2 class="section-titel">About Us</h2>
+
+        <div class="about-layout">
+
+            <div class="about-text">
+                <p>
+                   <b>
+                     Wanderlust is a deep, <strong> desire to travel and explore the world.</strong>It’s more than just a love for vacations—it’s a yearning to experience new cultures, landscapes, and ways of life. People with wanderlust often feel most alive when they’re discovering unfamiliar places, meeting new people, or stepping outside their comfort zones. This passion for adventure can lead to personal growth, broadened perspectives, and unforgettable memories. Whether it's hiking through misty mountains, wandering ancient city streets, or simply watching a sunset in a foreign land, wanderlust fuels the soul with curiosity and wonder.
+                   </b>
+                    </p>
+
+                <p>
+                    <b>
+                    Wanderlust is the <strong>spark that ignites the soul’s craving for adventure.</strong> It’s the quiet whisper that urges you to pack a bag, leave the familiar behind, and chase the unknown. For some, it’s about ticking destinations off a map; for others, it’s about finding pieces of themselves in foreign places. Wanderlust isn’t just about movement—it’s about transformation. Every journey becomes a story, every encounter a lesson, and every horizon a reminder that the world is vast, beautiful, and waiting to be explored.
+                    </b>
+
+                </p>
+
+
+            </div>
+
+            <br><br>z
+
+            <div class="about-img">
+
+                <img src="https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg" alt="" height="300px" width="300px" >
+
+            </div>
+
+        </div>
+        
+    </section>
+
+
+    <section class="value">
+
+        <h2 class="section-titel">Top Value For you</h2>
+        <p class="section-lead">Try variety of benefites when using our services</p>
+
+        <div class="value-flex">
+
+            <div class="value-card">
+
+                <img src="https://media.istockphoto.com/id/2176894952/photo/airplane-silhouette-illustration.jpg?s=1024x1024&w=is&k=20&c=XKDg8McbVBpUp8wZ-UY9VCB2BxO9zGESK9fSS4nQBRQ=" alt=""  height="80px" width="80px" border-radius="50%">
+                <h3>Flight booking</h3>
+                <p>Assistance with finding and booking the best flight ,including 
+                    international,domestic,and budget option.
+                </p>
+            </div>
+
+
+             <div class="value-card">
+
+                <img src="https://images.pexels.com/photos/23630278/pexels-photo-23630278.jpeg" alt=""  height="80px" width="80px" border-radius="50%">
+                <h3>hotel reservations</h3>
+                <p>offring a variety of accommadation option such as  hotlise,resorts,
+                    vacation rentales,and boutique atays.
+                </p>
+            </div>
+
+             <div class="value-card">
+
+                <img src="https://images.pexels.com/photos/15437125/pexels-photo-15437125.jpeg" alt=""  height="80px" width="80px" border-radius="50%">
+                <h3>car rentals</h3>
+                <p>Assistance in booking car rentals,airport transfer, and local transpostion option.
+                </p>
+            </div>
+
+
+             <div class="value-card">
+
+                <img src="https://images.pexels.com/photos/4122412/pexels-photo-4122412.jpeg" alt=""  height="80px" width="80px" border-radius="50%">
+                <h3>Adventures & activities</h3>
+                <p>organizing adventure activities such ad trekking ,scuba diving ,skiing,hot-air,and more
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="destinations">
+
+        <h2 class="section-titel">explore popular destintion</h2>
+        <p class="section-lead">trending destinations for your dream getaway</p>
+
+        <div class="destinations-grid">
+
+            <div class="grid-item">
+
+                <img src="https://images.pexels.com/photos/1583244/pexels-photo-1583244.jpeg" alt="" >
+                <h3>Discover the soul of india in the  south</h3>
+            </div>
+
+            
+
+
+
+             <div class="grid-item">
+
+                <img src="https://images.pexels.com/photos/33505816/pexels-photo-33505816.jpeg" alt="" >
+                <h3>Discover the  mystical majesty of himalaya</h3>
+            </div>
+
+            
+
+
+            <div class="grid-item">
+
+                <img src="https://images.pexels.com/photos/17503327/pexels-photo-17503327.jpeg" alt="" >
+                <h3>Unvell the magic of india's golden deserts</h3>
+            </div>
+
+            
+
+              <div class="grid-item">
+
+                <img src="https://images.pexels.com/photos/2764364/pexels-photo-2764364.jpeg" alt="" >
+                <h3>beauty of jaipur</h3>
+            </div>
+
+            
+             <div class="grid-item">
+
+                <img src="https://images.pexels.com/photos/9882016/pexels-photo-9882016.jpeg" alt="" >
+                <h3>Energy of Mysore </h3>
+            </div>
+            
+
+             <div class="grid-item">
+
+                <img src="https://images.pexels.com/photos/30374243/pexels-photo-30374243.jpeg" alt="" >
+                <h3>Unvell the magic of
+                    india's golden desert
+                </h3>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+    <section class="contact">
+        <h2 style="text-align: center;">Contact Us </h2>
+
+        <div class="contact-card">
+            <form action="">
+
+                <div class="form-item">
+                    <label for="">Name</label>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+
+                <div class="form-item">
+                    <label for="">Email</label>
+                    <input type="Email" placeholder="enter  your Email">
+                </div>
+                
+                <div class="form-item">
+                    <label for="">phone Number</label>
+                    <input type="number" placeholder="Enter your moblie number">
+                </div>
+
+                <div class="form-item">
+                    <label for="">travel destination</label>
+                    <input type="text" placeholder="Enter your destination">
+                </div>
+
+                <div class="form-item">
+                    <label for="">message or special requests</label>
+                    <textarea type="button" placeholder="Enter your message">
+                    </textarea>
+                </div>
+                
+                
+               <div class="text-m">
+
+                 <button type="submit" class="btn-primary">Book Now</button>
+    
+               </div>            
+                
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>copyright wonder toures and travels. all rights reserved.</p>
+    </footer>
+</body>
+</html>
